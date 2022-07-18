@@ -110,11 +110,11 @@ body,header,img,h1,nav,button,main,section,ul,li,p,h2,span,input,div{
     display: flex;
     margin-left: 10px;
     font-size: 18px;
-    max-width: 8%;
+    max-width: 88%;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    font-weight: 700
+    font-weight: 700;
 }
 
 .productDescription {
