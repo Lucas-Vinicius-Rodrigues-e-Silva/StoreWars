@@ -42,7 +42,6 @@ header{
     margin-left: 10vw;
     margin-right: 10vw;
     height: 10vh;
-    
 }
 
 .tittle{
@@ -109,8 +108,7 @@ header{
     transform: translateX(80px);
     color: white;
     content:"Light Side";
-    background-color: blue;
-    
+    background-color: blue; 
 }
 
 .buttonContainer{
@@ -123,20 +121,23 @@ header{
 
 .categories {
     font-weight: 600;
-    color: blue;
     font-size: 16px;
     margin-left: 25px;
     border: none;
     background-color: #FFFFFF;
-    transition: 0.5s;
+    transition: 0.25s;
+    background-color: blue;
+    border-radius: 8px;
+    width: 100px;
+    height: 20px;
 }
 
 .categories:hover{
     transition: 0.25s;
     cursor: pointer;
-    border-radius: 4px;
-    text-decoration-line: underline;
-    color: darkblue;
+    border-radius: 8px;
+    background-color: darkblue ;
+    color:white;
 }
 
 .mainContainer{
@@ -219,6 +220,7 @@ header{
     line-height: 24px;
     font-size: 14px;
     width: 220px;
+    color: black;
     white-space: wrap;
     text-overflow: ellipsis;
     overflow: hidden;
@@ -235,19 +237,22 @@ header{
 .buyButton{
     margin-left: 10px;
     margin-bottom: 10px;
-    background-color: white  ;
+    width: 155px;
     border: none;
     font-weight: 500;
     font-size: 14px;
-    color: #242424;
+    color: black;
+    background-color: blue;
+    border-radius: 8px;
     transition: 0.25s;  
 }
 
 .buyButton:hover{
     cursor: pointer;
-    text-decoration-line: underline;
-    color: blue;
+    background-color: darkblue;
+    color: white;
     transition: 0.25s;
+    border-radius: 8px;
 }
 
 .cart {
@@ -287,7 +292,6 @@ ul::-webkit-scrollbar-thumb {
     border: none;
     border-radius: 8px;
     background-color: blue;
-    color: #FFFFFF;
     margin-left: 8px;
     height: 7vh;
     width: 6vw;
@@ -297,7 +301,8 @@ ul::-webkit-scrollbar-thumb {
 .searchButton:hover{
     transition: 0.25s;
     cursor: pointer;
-    background-color:darkblue
+    background-color:darkblue;
+    color: white;
 }
 
 .cartContainer{
@@ -481,13 +486,13 @@ ul::-webkit-scrollbar-thumb {
 }
 .buttonsDarkMode{
     transition: 0.25s;
-    background-color: black;
-    color: red;
+    background-color: red;
+    color: black;
 }
 .buttonsDarkMode:hover{
     transition: 0.25s;
     background-color: darkred;
-    color: black;
+    color: red;
 }
 .productsDarkMode li{
     transition: 0.25s;
@@ -521,15 +526,15 @@ ul::-webkit-scrollbar-thumb {
 }
 
 .productsDarkMode button{
-    background-color: black;
-    color: red;
+    background-color: red;
+    color: black;
     transition: 0.25s;
 }
 
 .productsDarkMode button:hover{
     border-radius: 4px;
     background-color: darkred;
-    color: black;
+    color: red;
     transition: 0.25s;
 }
 
@@ -545,6 +550,7 @@ ul::-webkit-scrollbar-thumb {
 
 .cartDarkMode .searchButton:hover{
     background-color: darkred;
+    color: red;
 }
 
 .cartDarkMode .cartTittle{
