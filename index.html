@@ -10,26 +10,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
     <script defer src="/js/database.js"></script>
     <script defer src="/js/index.js"></script>
-    <link rel="icon" href="">
-    <title>Weartake</title>
+    <link rel="icon" href="/img/Logo.png">
+    <title>Store Wars</title>
 </head>
 <body class="body">
     <header class="boxShadow">
         <div class="containerMenu">
-            <img class="logo" src="" alt="">
-            <h1 class="mainTittle">Weartake</h1>
+            <h1 class="tittle">StoreWars</h1>
+            <div>
+                <input id="switch-shadow" class="switch switchShadow2" type="checkbox" />
+                <label for="switch-shadow"></label>
+              </div>
             <nav class="buttonContainer">
-                <button class="categories">Todos</button>
-                <button class="categories">Acessórios</button>
-                <button class="categories">Calçados</button>
-                <button class="categories">Camisetas</button>
+                <button id="todos" class="categories">Todos</button>
+                <button id="acessorios" class="categories">Camisetas</button>
+                <button id="calcados" class="categories">Brinquedos</button>
+                <button id="camisetas" class="categories">Decoração</button>
             </nav>
         </div>
     </header>
     <main class="mainContainer">
         <section class="productsSection">
             <ul class="mainContentContainer">
-                <li class="products">
+                <!--<li class="products">
                     <img class="productImage" src="/img/jaqueta.svg" alt="">
                     <p class="productCategorie">Camisetas</p>
                     <h2 class="productName">Lightweight Jacket</h2>
@@ -76,7 +79,7 @@
                     <p class="productDescription">Proteja-se dos elementos com esta jaqueta embalável Champion. Esta jaqueta de poliést...</p>
                     <span class="productValue">R$ 100,00</span>
                     <button class="buyButton">Adicionar ao carrinho</button>
-                </li>
+                </li>-->
             </ul>
         </section>
         <section class="cart">
@@ -86,10 +89,20 @@
             </div>
             <div class="cartContainer">
                 <h2 class="cartTittle">Carrinho de compras</h2>
-                <div class="renderizeCartItems"></div>
+                <ul id="teste" class="notEmptyAnymore" class="renderizeCartItems"   ></ul>
                 <div class="itemsQuantityAndValue">
                     <h2 class="empityCartTittle">Carrinho vazio</h2>
                     <p class="empityCartText">Adicione items</p>
+                </div>
+                <div id="total" class="notEmptyAnymore">
+                    <div class="quantity">
+                        <p class="quantityText">Quantidade:</p>
+                        <span class="realQuantity">0</span>
+                    </div>
+                    <div class="price">
+                        <p class="priceText">Total:</p>
+                        <span class="realPrice">0</span>
+                    </div>
                 </div>
             </div>
         </section>
