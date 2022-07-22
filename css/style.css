@@ -29,7 +29,7 @@ header{
 }
 
 .boxShadow{
-    box-shadow: 0px 4px 30px -10px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 30px -10px rgba(0, 0, 255, 1);
     position: fixed;
     background-color: #FFFFFF;
 }
@@ -61,15 +61,13 @@ header{
     cursor: pointer;
     outline: none;
     user-select: none;
-    
 }
 
 .switchShadow2 + label {
     padding: 2px;
-    width: 120px;
-    height: 40px;
+    width: 100px;
+    height: 20px;
     border-radius:60px;
-    
 }
 
 .switchShadow2 + label:before,
@@ -80,7 +78,7 @@ header{
   left: 1px;
   bottom: 1px;
   content: '';
-}
+}z
 
 .switchShadow2 + label:before {
   right: 1px;
@@ -90,12 +88,12 @@ header{
 }
 
 .switchShadow2 + label:after {
-  width: 40px;
-  height: 40px;
+  width: 20px;
+  height: 20px;
   background-color: black;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
-  content:"Dark Side" ;
+  content:"Dark" ;
   color: red;
   transition: all 0.4s;
 }
@@ -105,10 +103,11 @@ header{
 }
 
 .switchShadow2:checked + label:after {
-    transform: translateX(80px);
+    transform: translateX(62px);
     color: white;
-    content:"Light Side";
+    content:"Light";
     background-color: blue; 
+    width: 40px;
 }
 
 .buttonContainer{
@@ -180,7 +179,7 @@ header{
 
 .productImage{
     width: 235px;
-    height: 172px;
+    height: 190px;
     border-radius: 8px;
     object-fit: cover;
     background-color: blue;
@@ -237,7 +236,7 @@ header{
 .buyButton{
     margin-left: 10px;
     margin-bottom: 10px;
-    width: 155px;
+    width: 215px;
     border: none;
     font-weight: 500;
     font-size: 14px;
@@ -383,6 +382,7 @@ ul::-webkit-scrollbar-thumb {
     Width:100px;
     Height:120px;
     background-color: white;
+    object-fit: cover;
 }
 
 .productNameCart{
@@ -409,14 +409,12 @@ ul::-webkit-scrollbar-thumb {
 .trash{
     width: 15px;
     height: 15px;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 
 .trash:hover{
-    cursor: pointer;
-    
+    cursor: pointer;  
 }
-
 
 .priceContainer{
     display: flex;
@@ -478,6 +476,7 @@ ul::-webkit-scrollbar-thumb {
 }
 .headerDarkMode{
     background-color: black;
+    box-shadow: 0px 4px 30px -10px rgba(220, 20, 60, 1);
     transition: 0.5s;
 }
 .tittleDarkMode{

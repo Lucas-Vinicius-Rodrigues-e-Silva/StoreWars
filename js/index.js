@@ -46,6 +46,7 @@ listProducts(data,tagUl)
 // Fazendo produtos
 
 function makeProduct(products){
+
     let id                    = products.id;
     let img                   = products.img;
     let itemName              = products.nameItem;
@@ -107,6 +108,7 @@ function takeTheProduct(event){
         let product = data.find(function(product){
 
             if(product.id == productId){
+
                 return product
             }
 
@@ -125,7 +127,7 @@ function addToCart(product){
         cart.push(product)
 
         listProductsCart(cart, tagUlCart)
-    }
+    } 
 }
 
 // função de listar no carrinho, que já soma e mostra a quantidade
@@ -193,7 +195,7 @@ function makeProductInCart(products){
     let tagImg                  = document.createElement("img");
     let tagH2                   = document.createElement("h2");
     let tagSpan                 = document.createElement("span");
-    let trashButton             = document.createElement("img")
+    let trashButton             = document.createElement("img");
 
     tagImg.src                  = img;
     tagImg.alt                  = itemName;
@@ -212,7 +214,6 @@ function makeProductInCart(products){
     tagH2.classList.add("productNameCart")
     tagSpan.classList.add("productValueCart")
     trashButton.classList.add("trash")
-
 
     return tagLi
 }
@@ -313,44 +314,44 @@ function everyone(){
 
 // "Escutando" o click do usuário no botão "Acessórios"
 
-buttonAcessories.addEventListener("click", acessories)
+buttonAcessories.addEventListener("click", toys)
 
 // Verificando qual item tem a tag acessórios, e listando os mesmos
 
-function acessories(){
+function toys(){
     
-    let acessories = []
+    let toys = []
 
     for(let i = 0; i < data.length; i++){
 
         if(buttonAcessories.innerText == data[i].tag[0]){
 
-            acessories.push(data[i])
+            toys.push(data[i])
         }
     }
 
-    listProducts(acessories,tagUl)
+    listProducts(toys,tagUl)
 }
 
 // "Escutando" o click do usuário no botão "Calçados"
 
-buttonShoes.addEventListener("click", shoes)
+buttonShoes.addEventListener("click", decoration)
 
 // Verificando qual item tem a tag calçados, e listando os mesmos
 
-function shoes(){
+function decoration(){
     
-    let shoes = []
+    let decoration = []
 
     for(let i = 0; i < data.length; i++){
 
         if(buttonShoes.innerText == data[i].tag[0]){
 
-            shoes.push(data[i])
+            decoration.push(data[i])
         }
     }
 
-    listProducts(shoes,tagUl)
+    listProducts(decoration,tagUl)
 }
 
 // "Escutando" o click do usuário no Camisetas ""
