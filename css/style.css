@@ -67,7 +67,7 @@ header{
     padding: 2px;
     width: 100px;
     height: 20px;
-    border-radius:60px;
+    border-radius:8px;
 }
 
 .switchShadow2 + label:before,
@@ -78,7 +78,7 @@ header{
   left: 1px;
   bottom: 1px;
   content: '';
-}z
+}
 
 .switchShadow2 + label:before {
   right: 1px;
